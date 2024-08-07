@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>MY CALCULATOR</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="0" id="Input-Data">
+        <div class="row">
+            <button onclick="clearall()">C</button>
+            <button onclick="remove()"><i class="bi bi-file-excel"></i></button>
+            <button onclick="targetinput('%')">%</button>
+            <button onclick="targetinput('%')">/</button>
+        </div>
+        <div class="row">
+            <button onclick="targetinput('7')">7</button>
+            <button onclick="targetinput('8')">8</button>
+            <button onclick="targetinput('9')">9</button>
+            <button onclick="targetinput('*')">X</button>
+        </div>
+        <div class="row">
+            <button onclick="targetinput('4')">4</button>
+            <button onclick="targetinput('5')">5</button>
+            <button onclick="targetinput('6')">6</button>
+            <button onclick="targetinput('-')">-</button>
+        </div>
+        <div class="row">
+            <button onclick="targetinput('1')">1</button>
+            <button onclick="targetinput('2')">2</button>
+            <button onclick="targetinput('3')">3</button>
+            <button onclick="targetinput('+')">+</button>
+        </div>
+        <div class="row">
+            <button onclick="targetinput('0')">0</button>
+            <button onclick="targetinput('00')">00</button>
+            <button onclick="targetinput('.')">.</button>
+            <button onclick=calculate()>=</button>
+        </div>
+    </div>
+    <script src="./calc.js"></script>
+</body>
+</html>
